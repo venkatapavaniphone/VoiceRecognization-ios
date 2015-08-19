@@ -14,6 +14,12 @@
 		90A3EE591B835DF600B7BCA3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90A3EE581B835DF600B7BCA3 /* Images.xcassets */; };
 		90A3EE5C1B835DF600B7BCA3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90A3EE5A1B835DF600B7BCA3 /* LaunchScreen.xib */; };
 		90A3EE681B835DF600B7BCA3 /* VoiceRecognizationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A3EE671B835DF600B7BCA3 /* VoiceRecognizationTests.m */; };
+		90A3EE761B845C0F00B7BCA3 /* AcousticModelEnglish.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 90A3EE721B845C0F00B7BCA3 /* AcousticModelEnglish.bundle */; };
+		90A3EE771B845C0F00B7BCA3 /* AcousticModelSpanish.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 90A3EE731B845C0F00B7BCA3 /* AcousticModelSpanish.bundle */; };
+		90A3EE781B845C0F00B7BCA3 /* OpenEars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A3EE741B845C0F00B7BCA3 /* OpenEars.framework */; };
+		90A3EE791B845C0F00B7BCA3 /* Slt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A3EE751B845C0F00B7BCA3 /* Slt.framework */; };
+		90A3EE7B1B845C3E00B7BCA3 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A3EE7A1B845C3E00B7BCA3 /* AudioToolbox.framework */; };
+		90A3EE7D1B845C4E00B7BCA3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A3EE7C1B845C4E00B7BCA3 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +46,12 @@
 		90A3EE611B835DF600B7BCA3 /* VoiceRecognizationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoiceRecognizationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		90A3EE661B835DF600B7BCA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90A3EE671B835DF600B7BCA3 /* VoiceRecognizationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VoiceRecognizationTests.m; sourceTree = "<group>"; };
+		90A3EE721B845C0F00B7BCA3 /* AcousticModelEnglish.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AcousticModelEnglish.bundle; sourceTree = "<group>"; };
+		90A3EE731B845C0F00B7BCA3 /* AcousticModelSpanish.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AcousticModelSpanish.bundle; sourceTree = "<group>"; };
+		90A3EE741B845C0F00B7BCA3 /* OpenEars.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenEars.framework; sourceTree = "<group>"; };
+		90A3EE751B845C0F00B7BCA3 /* Slt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Slt.framework; sourceTree = "<group>"; };
+		90A3EE7A1B845C3E00B7BCA3 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		90A3EE7C1B845C4E00B7BCA3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +59,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90A3EE7D1B845C4E00B7BCA3 /* AVFoundation.framework in Frameworks */,
+				90A3EE7B1B845C3E00B7BCA3 /* AudioToolbox.framework in Frameworks */,
+				90A3EE791B845C0F00B7BCA3 /* Slt.framework in Frameworks */,
+				90A3EE781B845C0F00B7BCA3 /* OpenEars.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +79,9 @@
 		90A3EE3F1B835DF600B7BCA3 = {
 			isa = PBXGroup;
 			children = (
+				90A3EE7C1B845C4E00B7BCA3 /* AVFoundation.framework */,
+				90A3EE7A1B845C3E00B7BCA3 /* AudioToolbox.framework */,
+				90A3EE711B845C0F00B7BCA3 /* Framework */,
 				90A3EE4A1B835DF600B7BCA3 /* VoiceRecognization */,
 				90A3EE641B835DF600B7BCA3 /* VoiceRecognizationTests */,
 				90A3EE491B835DF600B7BCA3 /* Products */,
@@ -117,6 +136,17 @@
 				90A3EE661B835DF600B7BCA3 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		90A3EE711B845C0F00B7BCA3 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				90A3EE721B845C0F00B7BCA3 /* AcousticModelEnglish.bundle */,
+				90A3EE731B845C0F00B7BCA3 /* AcousticModelSpanish.bundle */,
+				90A3EE741B845C0F00B7BCA3 /* OpenEars.framework */,
+				90A3EE751B845C0F00B7BCA3 /* Slt.framework */,
+			);
+			path = Framework;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +230,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				90A3EE571B835DF600B7BCA3 /* Main.storyboard in Resources */,
+				90A3EE771B845C0F00B7BCA3 /* AcousticModelSpanish.bundle in Resources */,
+				90A3EE761B845C0F00B7BCA3 /* AcousticModelEnglish.bundle in Resources */,
 				90A3EE5C1B835DF600B7BCA3 /* LaunchScreen.xib in Resources */,
 				90A3EE591B835DF600B7BCA3 /* Images.xcassets in Resources */,
 			);
@@ -299,7 +331,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -334,6 +366,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -343,8 +376,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Framework",
+				);
 				INFOPLIST_FILE = VoiceRecognization/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -353,8 +391,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Framework",
+				);
 				INFOPLIST_FILE = VoiceRecognization/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -412,6 +455,7 @@
 				90A3EE6D1B835DF600B7BCA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		90A3EE6E1B835DF600B7BCA3 /* Build configuration list for PBXNativeTarget "VoiceRecognizationTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +464,7 @@
 				90A3EE701B835DF600B7BCA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

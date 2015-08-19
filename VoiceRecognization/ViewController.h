@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <OpenEars/OELanguageModelGenerator.h>
+#import <OpenEars/OEAcousticModel.h>
+#import <OpenEars/OEEventsObserver.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<OEEventsObserverDelegate>
 
-
+@property (strong, nonatomic) OEEventsObserver *openEarsEventsObserver;
+-(IBAction)record_Btn:(id)sender;
 @end
 
